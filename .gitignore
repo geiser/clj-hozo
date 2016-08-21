@@ -11,3 +11,4 @@ pom.xml.asc
 .lein-plugins/
 .lein-failures
 .nrepl-port
+!hz-lib/hozo-api-1.0.11.jar
