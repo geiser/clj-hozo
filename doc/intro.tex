@@ -1,0 +1,82 @@
+
+\subsection{Specification about the conversion from HZObject to clojure structures}
+
+if the value of property in the POJOs is null or empty 
+The value of metadata is merge using inherence properties
+
+\begin{table}
+
+POJOs & Clojure structure (Hash-map) & Notes \\
+Type & Property & key & metadata \\ \hline \hline
+
+HozoObject
+ id & :id
+ label & :label
+ description & :description
+
+>HozoOntologyObject
+\{:ontology \{:id \emph{id} :label \emph{label}\}\}
+\emph{id} and \emph{label} are properties of ontology in which was defined this HozoOntologyObject
+
+>HozoModelObject
+\{:model \{:id id :label label\}
+  :ontology-object \emph{ontology-object}\}
+\emph{ontology-object} is the HozoOntologyObject in which is based this HozoModelObject
+
+>>ConceptInstance
+ relationInstanceList & :relations [...]
+ slotInstanceList & :slots [...]
+\{:type ``concept-instance''\}
+see RelationInstance and SlotInstance to understand the format in :relations and :slots
+
+>>>BasicConceptInstance
+\{:type ``basic-concept-instance''\}
+
+>>>RoleConceptInstance
+  dependentSlotIns & :depend-on \emph{dep-slot}
+  dependentConceptIns & :depend-on \emph{dep-concept}
+\{:type ``role-concept-instance''\}
+see HozoModelObject to undertand the format of \emph{dep-slot} and \emph{dep-concept}
+\emph{dep-slot} and \emph{dep-concept} include the metadata \{:type ``slot-instance''\} and \{:type ``concept-instance''\}, respectively
+
+>>>RoleHolderInstance
+  dependentSlotIns & :depend-on \emph{dep-slot}
+  dependentConceptIns & :depend-on \emph{dep-concept}
+\{:type ``role-holder-instance''\}
+see HozoModelObject to understand the format of \emph{dep-slot} and \emph{dep-concept}
+\emph{dep-slot} and \emph{dep-concept} include the metadata \{:type ``slot-instance''\} and \{:type ``concept-instance''\}, respectively
+
+>>RelationInstance
+\{:type ``relation-instance''\}
+
+>>>InstanceOfRelation
+  ontologyLabel &
+  instanceLabel &
+  conceptObject & :concept \emph{con-obj}
+  instanceObject & :instance \emph{ins-obj}
+\{:type ``instance-of-relation''\}
+see HozoOntologyObject and HozoModelObject to understand the format of \emph{con-obj} and \emph{ins-obj}, respectively
+
+>>>RConceptRelationInstance
+  slotRelationInstanceList & :slots [...]
+\{:type ``relation-concept-instance''\}
+see RSlotRelationInstance to understand the format in :slots
+
+>>SlotInstance
+  roleConceptInstance & :role
+  constraintValue & :played-by \emph{get-played-by} 
+  roleConceptInstanceList & :roles [...]
+  roleHolderInstance & :role-holder
+  dependConceptInstance & :depend-on \emph{depend-on}
+  parentSlotInstance & :parent-slot \emph{parent-slot}
+  slotInstanceList & :slots [...]
+  relationInstanceList & :relations [...]
+\{:type ``slot-instance''\}
+see function \emph{get-played-by}, it depends of property \emph{constraintConceptInstance}
+see HozoModelObject to understand the format of \emph{:role}, \emph{:roles}, \emph{:role-holder}, \emph{:depend-on}, \emph{:parent-slot}, and \emph{:relations}
+the format of \emph{:slots} is recursive SlotInstance
+
+\end{table}
+
+
+

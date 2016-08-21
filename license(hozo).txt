@@ -1,0 +1,45 @@
+重要：『法造利用APIおよび法造推論機構のライセンスについて』
+
+本ソフトウェアは、下記の事業の一環としてエネゲートが開発したものを提供するものであり、ご使用いただく前に下記の「ソフトウェア・ライセンス」を必ずお読みください。
+
+　　・厚生労働省 平成18年度科学技術振興調整費（重要政策課題への機動的対応の推進）
+　　　「臨床医学データ解析のための医療知識基盤データベースの構築に関する研究」 
+　　　（代表者：東京大学医学部大江和彦、分担者：大阪大学溝口理一郎、他）
+　　・厚生労働省 平成19年度医療情報システム開発普及等委託費
+　　　「医療情報システムのための医療知識基盤データベース研究開発事業」
+　　　（代表者：東京大学医学部大江和彦、分担者：大阪大学溝口理一郎、他）
+
+　　【著作権者】大阪大学 溝口研究室、株式会社 エネゲート
+　　　　　　　　東京大学医学部附属病院企画情報運営部 大江研究室
+
+本ソフトウェアについては、下記の「ソフトウェア・ライセンス」を承認していただけることがご使用の条件になっております。本ソフトウェアをインストール、複製、ご使用になった時点で下記のライセンス条項にご同意いただいたものとみなします。 
+
+また、法造利用APIおよび法造推論機構のバイナリ形式のファイルおよび付属物は、以下のBSDライセンスに基づいたライセンスによってリリースされ、どなたでも商用、非商用にかかわらず無償でご利用いただけます。
+
+
+＜ソフトウェア・ライセンス＞
+
+Copyright (c) 2008-2009, Mizoguchi Lab., ENEGATE Co., Ltd. and Ohe Lab. All rights reserved.
+
+ソースコード形式かバイナリ形式か、変更するかしないかを問わず、以下の条件を満たす場合に限り、再頒布および使用が許可されます。
+
+１．ソースコードを再頒布する場合、上記の著作権表示、本条件一覧、および下記免責条項を含めること。
+２．バイナリ形式で再頒布する場合、頒布物に付属のドキュメント等の資料に、上記の著作権表示、本条件一覧、および下記免責条項を含めること。
+３．書面による特別の許可なしに、本ソフトウェアから派生した製品の宣伝または販売促進に、大阪大学溝口研究室、株式会社エネゲートおよび東京大学医学部附属病院企画情報運営部大江研究室の名前を使用してはならない。
+
+本ソフトウェアは、大阪大学溝口研究室、株式会社エネゲートおよび東京大学医学部附属病院企画情報運営部大江研究室によって「現状のまま」提供されており、明示黙示を問わず、商業的な使用可能性、および特定の目的に対する適合性に関する暗黙の保証も含め、またそれに限定されない、いかなる保証もありません。大阪大学溝口研究室も株式会社エネゲートも東京大学医学部附属病院企画情報運営部大江研究室も、事由のいかんを問わず、 損害発生の原因いかんを問わず、かつ責任の根拠が契約であるか厳格責任であるか（過失その他の）不法行為であるかを問わず、仮にそのような損害が発生する可能性を知らされていたとしても、本ソフトウェアの使用によって発生した（代替品または代用サービスの調達、使用の喪失、データの喪失、利益の喪失、業務の中断も含め、またそれに限定されない）直接損害、間接損害、偶発的な損害、特別損害、懲罰的損害、または結果損害について、一切責任を負わないものとします。
+
+
+＜Software Lisence＞
+
+Copyright (c) 2008-2009, Mizoguchi Lab. ENEGATE Co., Ltd. and Ohe Lab. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+3. Neither the name of Mizoguchi Lab. nor ENEGATE Co., Ltd. nor Ohe Lab. may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY MIZOGUCHI LAB., ENEGATE CO., LTD. AND OHE LAB. "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL MIZOGUCHI LAB. OR ENEGATE CO., LTD. OR OHE LAB. BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+

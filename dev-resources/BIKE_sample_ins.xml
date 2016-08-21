@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OE_FILE_INS filename="BIKE_sample_ins.xml" ontology_file="BIKE_sample.xml">
+<BASE_ONTLOGY>BIKE_sample.xml</BASE_ONTLOGY>
+<FILENAME_INS>BIKE_sample_ins.xml</FILENAME_INS>
+<INSTANCES>
+<INSTANCE class="Pedal">
+<LABEL>Pedal_2</LABEL>
+<POS x="706" y="171"/>
+<SUB_L label="Pedal_Ins" />
+</INSTANCE>
+<INSTANCE class="Bicycle">
+<LABEL>Bicycle_1</LABEL>
+<POS x="50" y="295"/>
+<SLOTS>
+<SLOT type="NW" label="slot" kind="p/o" num="2" role="Wheel" class_constraint="Wheel" rh_name="" value="Wheel_1">
+<POS x="94" y="330"/>
+<PARENT_SLOT slot="motorcycles$slot" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+<SLOT type="NW" label="slot" kind="p/o" num="2" role="Wheel" class_constraint="Wheel" rh_name="" value="Wheel_2">
+<POS x="94" y="365"/>
+<PARENT_SLOT slot="motorcycles$slot" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+<SLOT type="NW" label="slot2" kind="a/o" num="1" role="Weight(kg)" class_constraint="PositiveInteger" rh_name="" value="15">
+<POS x="93" y="400"/>
+<PARENT_SLOT slot="motorcycles$slot2" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+<SLOT type="NW" label="slot3" kind="p/o" num="1" role="Handle" class_constraint="Handle" rh_name="" value="Handle_1">
+<POS x="94" y="435"/>
+<PARENT_SLOT slot="motorcycles$slot3" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+<SLOT type="NW" label="slot2" kind="p/o" num="1" role="Saddle" class_constraint="Saddle" rh_name="" value="Saddle_1">
+<POS x="94" y="470"/>
+<PARENT_SLOT slot="Bicycle$slot2" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+<SLOT type="NW" label="slot" kind="p/o" num="2" role="Pedal" class_constraint="Pedal" rh_name="" value="Pedal_1">
+<POS x="94" y="505"/>
+<PARENT_SLOT slot="Bicycle$slot" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+<SLOT type="NW" label="slot" kind="p/o" num="2" role="Pedal" class_constraint="Pedal" rh_name="" value="Pedal_2">
+<POS x="94" y="540"/>
+<PARENT_SLOT slot="Bicycle$slot" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST label="Dependencies">
+<POS x="206" y="443"/>
+<ARC>Bicycle_1$slot</ARC>
+<ARC>Bicycle_1$slot3</ARC>
+<R_NODE class="Dependencies">
+<LABEL>Dependencies</LABEL>
+<SLOTS>
+<SLOT type="NW" label="slot" kind="p/i" num="1" role="LinkedProducts" class_constraint="Thing" rh_name="" value="" >
+</SLOT>
+<SLOT type="NW" label="slot2" kind="p/i" num="1" role="LinkedProducts" class_constraint="Thing" rh_name="" value="" >
+</SLOT>
+</SLOTS>
+</R_NODE>
+</R_CONST>
+<R_CONST label="Dependencies">
+<POS x="246" y="378"/>
+<ARC>Bicycle_1$slot</ARC>
+<ARC>Bicycle_1$slot3</ARC>
+<R_NODE class="Dependencies">
+<LABEL>Dependencies</LABEL>
+<SLOTS>
+<SLOT type="NW" label="slot" kind="p/i" num="1" role="LinkedProducts" class_constraint="Thing" rh_name="" value="" >
+</SLOT>
+<SLOT type="NW" label="slot2" kind="p/i" num="1" role="LinkedProducts" class_constraint="Thing" rh_name="" value="" >
+</SLOT>
+</SLOTS>
+</R_NODE>
+</R_CONST>
+</RELATIONS>
+<SUB_L label="Bicycle_Ins" />
+</INSTANCE>
+<INSTANCE class="Wheel">
+<LABEL>Wheel_3</LABEL>
+<POS x="757" y="218"/>
+<SUB_L label="Wheel_Ins" />
+<PART_TREE>close</PART_TREE>
+</INSTANCE>
+<INSTANCE class="PositiveInteger">
+<LABEL>PositiveInteger_1</LABEL>
+<POS x="727" y="434"/>
+<SUB_L label="PositiveInteger_Ins" />
+<PART_TREE>close</PART_TREE>
+</INSTANCE>
+<INSTANCE class="Handle">
+<LABEL>Handle_2</LABEL>
+<POS x="680" y="299"/>
+<SUB_L label="Handle_Ins" />
+<PART_TREE>close</PART_TREE>
+</INSTANCE>
+<INSTANCE class="Pedal">
+<LABEL>Pedal_3</LABEL>
+<POS x="669" y="356"/>
+<SUB_L label="Pedal_Ins" />
+<PART_TREE>close</PART_TREE>
+</INSTANCE>
+<INSTANCE class="Pedal">
+<LABEL>Pedal_4</LABEL>
+<POS x="576" y="66"/>
+<SUB_L label="Pedal_Ins" />
+<PART_TREE>close</PART_TREE>
+</INSTANCE>
+<INSTANCE class="Saddle">
+<LABEL>Saddle_2</LABEL>
+<POS x="617" y="143"/>
+<SUB_L label="Saddle_Ins" />
+<PART_TREE>close</PART_TREE>
+</INSTANCE>
+<INSTANCE class="Bicycle">
+<LABEL>Bicycle_2</LABEL>
+<POS x="353" y="301"/>
+<SLOTS>
+<SLOT type="NW" label="slot1" kind="p/o" num="2" role="Wheel" class_constraint="Wheel" rh_name="" value="Wheel_3">
+<POS x="397" y="336"/>
+<PARENT_SLOT slot="motorcycles$slot" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+<SLOT type="NW" label="slot2" kind="p/o" num="2" role="Wheel" class_constraint="Wheel" rh_name="" value="Wheel_4">
+<POS x="397" y="371"/>
+<PARENT_SLOT slot="motorcycles$slot" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+<SLOT type="NW" label="slot3" kind="a/o" num="1" role="Weight(kg)" class_constraint="PositiveInteger" rh_name="" value="PositiveInteger_1">
+<POS x="396" y="406"/>
+<PARENT_SLOT slot="motorcycles$slot2" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+<SLOT type="NW" label="slot4" kind="p/o" num="1" role="Handle" class_constraint="Handle" rh_name="" value="Handle_2">
+<POS x="397" y="441"/>
+<PARENT_SLOT slot="motorcycles$slot3" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+<SLOT type="NW" label="slot5" kind="p/o" num="2" role="Pedal" class_constraint="Pedal" rh_name="" value="Pedal_3">
+<POS x="397" y="476"/>
+<PARENT_SLOT slot="Bicycle$slot" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+<SLOT type="NW" label="slot6" kind="p/o" num="2" role="Pedal" class_constraint="Pedal" rh_name="" value="Pedal_4">
+<POS x="397" y="511"/>
+<PARENT_SLOT slot="Bicycle$slot" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+<SLOT type="NW" label="slot7" kind="p/o" num="1" role="Saddle" class_constraint="Saddle" rh_name="" value="Saddle_2">
+<POS x="397" y="546"/>
+<PARENT_SLOT slot="Bicycle$slot2" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="Bicycle_Ins" />
+</INSTANCE>
+<INSTANCE class="Wheel">
+<LABEL>Wheel_4</LABEL>
+<POS x="798" y="44"/>
+<SUB_L label="Wheel_Ins" />
+<PART_TREE>close</PART_TREE>
+</INSTANCE>
+<INSTANCE class="Wheel">
+<LABEL>Wheel_1</LABEL>
+<POS x="925" y="259"/>
+<SUB_L label="Wheel_Ins" />
+</INSTANCE>
+<INSTANCE class="Wheel">
+<LABEL>Wheel_2</LABEL>
+<POS x="808" y="67"/>
+<SUB_L label="Wheel_Ins" />
+</INSTANCE>
+<INSTANCE class="PositiveInteger">
+<LABEL>15</LABEL>
+<POS x="850" y="320"/>
+<SUB_L label="PositiveInteger_Ins" />
+</INSTANCE>
+<INSTANCE class="Handle">
+<LABEL>Handle_1</LABEL>
+<POS x="783" y="580"/>
+<SUB_L label="Handle_Ins" />
+</INSTANCE>
+<INSTANCE class="Pedal">
+<LABEL>Pedal_1</LABEL>
+<POS x="863" y="484"/>
+<SUB_L label="Pedal_Ins" />
+</INSTANCE>
+<INSTANCE class="Saddle">
+<LABEL>Saddle_1</LABEL>
+<POS x="956" y="409"/>
+<SUB_L label="Saddle_Ins" />
+</INSTANCE>
+<INSTANCE class="Human">
+<LABEL>Yamada</LABEL>
+<POS x="282" y="50"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="Human_Ins" />
+<PART_TREE>close</PART_TREE>
+</INSTANCE>
+<INSTANCE class="Wheel">
+<LABEL>Wheel_5</LABEL>
+<POS x="174" y="95"/>
+<SUB_L label="Wheel_Ins" />
+<PART_TREE>close</PART_TREE>
+</INSTANCE>
+<INSTANCE class="Wheel">
+<LABEL>Wheel_6</LABEL>
+<POS x="174" y="130"/>
+<SUB_L label="Wheel_Ins" />
+<PART_TREE>close</PART_TREE>
+</INSTANCE>
+<INSTANCE class="PositiveInteger">
+<LABEL>PositiveInteger_3</LABEL>
+<POS x="173" y="165"/>
+<SUB_L label="PositiveInteger_Ins" />
+<PART_TREE>close</PART_TREE>
+</INSTANCE>
+<INSTANCE class="Pedal">
+<LABEL>Pedal_5</LABEL>
+<POS x="174" y="200"/>
+<SUB_L label="Pedal_Ins" />
+<PART_TREE>close</PART_TREE>
+</INSTANCE>
+<INSTANCE class="Pedal">
+<LABEL>Pedal_6</LABEL>
+<POS x="174" y="235"/>
+<SUB_L label="Pedal_Ins" />
+<PART_TREE>close</PART_TREE>
+</INSTANCE>
+<INSTANCE class="Saddle">
+<LABEL>Saddle_3</LABEL>
+<POS x="174" y="270"/>
+<SUB_L label="Saddle_Ins" />
+<PART_TREE>close</PART_TREE>
+</INSTANCE>
+<INSTANCE class="FlatHandle">
+<LABEL>FlatHandle_1</LABEL>
+<POS x="174" y="305"/>
+<SUB_L label="FlatHandle_Ins" />
+<PART_TREE>close</PART_TREE>
+</INSTANCE>
+<INSTANCE class="MountainBike">
+<LABEL>MountainBike_1</LABEL>
+<POS x="532" y="519"/>
+<SLOTS>
+<SLOT type="NW" label="slot1" kind="p/o" num="2" role="Wheel" class_constraint="Wheel" rh_name="" value="Wheel_5">
+<POS x="576" y="554"/>
+<PARENT_SLOT slot="motorcycles$slot" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+<SLOT type="NW" label="slot2" kind="p/o" num="2" role="Wheel" class_constraint="Wheel" rh_name="" value="Wheel_6">
+<POS x="576" y="589"/>
+<PARENT_SLOT slot="motorcycles$slot" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+<SLOT type="NW" label="slot3" kind="a/o" num="1" role="Weight(kg)" class_constraint="PositiveInteger" rh_name="" value="PositiveInteger_3">
+<POS x="575" y="624"/>
+<PARENT_SLOT slot="motorcycles$slot2" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+<SLOT type="NW" label="slot4" kind="p/o" num="2" role="Pedal" class_constraint="Pedal" rh_name="" value="Pedal_5">
+<POS x="576" y="659"/>
+<PARENT_SLOT slot="Bicycle$slot" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+<SLOT type="NW" label="slot5" kind="p/o" num="2" role="Pedal" class_constraint="Pedal" rh_name="" value="Pedal_6">
+<POS x="576" y="694"/>
+<PARENT_SLOT slot="Bicycle$slot" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+<SLOT type="NW" label="slot6" kind="p/o" num="1" role="Saddle" class_constraint="Saddle" rh_name="" value="Saddle_3">
+<POS x="576" y="729"/>
+<PARENT_SLOT slot="Bicycle$slot2" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+<SLOT type="NW" label="slot7" kind="p/o" num="1" role="Handle" class_constraint="FlatHandle" rh_name="" value="FlatHandle_1">
+<POS x="576" y="764"/>
+<PARENT_SLOT slot="MountainBike$slot" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST label="Dependencies">
+<POS x="731" y="617"/>
+<ARC>MountainBike_1$slot1</ARC>
+<ARC>MountainBike_1$slot4</ARC>
+<R_NODE class="Dependencies">
+<LABEL>Dependencies</LABEL>
+<SLOTS>
+<SLOT type="NW" label="slot" kind="p/i" num="1" role="LinkedProducts" class_constraint="Any" rh_name="" value="" >
+</SLOT>
+<SLOT type="NW" label="slot2" kind="p/i" num="1" role="LinkedProducts" class_constraint="Any" rh_name="" value="" >
+</SLOT>
+</SLOTS>
+</R_NODE>
+</R_CONST>
+</RELATIONS>
+<SUB_L label="MountainBike_Ins" />
+</INSTANCE>
+<R_CONST label="OwnershipRelationship">
+<POS x="74" y="96"/>
+<ARC_NODE role_name="Owner">Bicycle_1</ARC_NODE>
+<ARC_NODE role_name="Possession">Yamada</ARC_NODE>
+<R_NODE class="OwnershipRelationship">
+<SLOTS>
+<SLOT type="NW" label="slot2" kind="p/i" num="1" role="Owner" class_constraint="Human" rh_name="" value="" />
+<SLOT type="NW" label="slot" kind="p/i" num="1" role="Possession" class_constraint="Vehicles" rh_name="" value="" />
+</SLOTS>
+</R_NODE>
+</R_CONST>
+<R_CONST label="OwnershipRelationship">
+<POS x="189" y="168"/>
+<ARC_NODE role_name="Owner">Bicycle_2</ARC_NODE>
+<ARC_NODE role_name="Possession">Yamada</ARC_NODE>
+<R_NODE class="OwnershipRelationship">
+<SLOTS>
+<SLOT type="NW" label="slot2" kind="p/i" num="1" role="Owner" class_constraint="Human" rh_name="" value="" />
+<SLOT type="NW" label="slot" kind="p/i" num="1" role="Possession" class_constraint="Vehicles" rh_name="" value="" />
+</SLOTS>
+</R_NODE>
+</R_CONST>
+</INSTANCES>
+</OE_FILE_INS>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OE_FILE filename="BIKE_sample.xml" ont_id="1410986548000ont" >
+<FILENAME_ONT>BIKE_sample.xml</FILENAME_ONT>
+<W_CONCEPTS hasAny="false">
+<CANVAS_SIZE w="4023" h="4535" x="0" y="0" />
+<CONCEPT id="1410986548000_n0" >
+<LABEL>Vehicles</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="20" y="40"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1410986548000_n1" >
+<LABEL>motorcycles</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="60" y="140"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1410986548000_s2" 
+ type="NW"  label="slot"  kind="p/o"  num="2"  role="Wheel"  class_constraint="Wheel"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Wheel" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1410986548000_s3" 
+ type="NW"  label="slot2"  kind="a/o"  num="1"  role="Weight(kg)"  class_constraint="PositiveInteger"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+</SLOT>
+<SLOT id="1410986548000_s4" 
+ type="NW"  label="slot3"  kind="p/o"  num="1"  role="Handle"  class_constraint="Handle"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Handle" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1410986548000_s5" 
+ type="NW"  label="slot4"  kind="p/o"  num="0.."  role="Basket"  class_constraint="Basket"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1410986548000_n6" >
+<LABEL>Bicycle</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="440" y="80"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1410986548000_s7" 
+ type="NW"  label="slot"  kind="p/o"  num="2"  role="Pedal"  class_constraint="Pedal"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+</SLOT>
+<SLOT id="1410986548000_s8" 
+ type="NW"  label="slot2"  kind="p/o"  num="1"  role="Saddle"  class_constraint="Saddle"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1410986548000_n9" >
+<LABEL>MountainBike</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="740" y="100"/>
+<SLOTS>
+<SLOT id="1410986548000_s10" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="Handle"  class_constraint="FlatHandle"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="motorcycles$slot3"/>
+<SUB_L label="" def="" role_name="" class_const="FlatHandle" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1410986548000_n11" >
+<LABEL>CityCycle</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="660" y="260"/>
+<SLOTS>
+<SLOT id="1410986548000_s12" 
+ type="OR"  label="slot3"  kind="p/o"  num="1"  role="Handle"  class_constraint="UptypeHandle"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="motorcycles$slot3"/>
+<SUB_L label="" def="" role_name="" class_const="UptypeHandle" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1410986548000_s13" 
+ type="OR"  label="slot4"  kind="p/o"  num="1.."  role="Basket"  class_constraint="Basket"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="motorcycles$slot4"/>
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1410986548000_n14" >
+<LABEL>automaticmotorcycles</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="380" y="340"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1410986548000_n15" >
+<LABEL>Wheel</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="100" y="380"/>
+</CONCEPT>
+<CONCEPT id="1410986548000_n16" >
+<LABEL>Handle</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="300" y="560"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1410986548000_n17" >
+<LABEL>Basket</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="500" y="440"/>
+<PART_TREE>close</PART_TREE>
+</CONCEPT>
+<CONCEPT id="1410986548000_n18" >
+<LABEL>PositiveInteger</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="940" y="400"/>
+</CONCEPT>
+<CONCEPT id="1410986548000_n19" >
+<LABEL>UptypeHandle</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="140" y="500"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1410986548000_n20" >
+<LABEL>FlatHandle</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="120" y="660"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1410986548000_n21" >
+<LABEL>Pedal</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="280" y="320"/>
+</CONCEPT>
+<CONCEPT id="1410986548000_n22" >
+<LABEL>Saddle</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="420" y="560"/>
+</CONCEPT>
+<CONCEPT id="1410986548000_n23" >
+<LABEL>Human</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="817" y="471"/>
+<SLOTS>
+<SLOT id="1428518249000_s24" 
+ type="NW"  label="slot"  kind="a/o"  num="1"  role="Name"  class_constraint="string"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="string" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1428518249000_s25" 
+ type="NW"  label="slot2"  kind="a/o"  num="1"  role="Age"  class_constraint="integer"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="integer" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1428518249000_s26" 
+ type="NW"  label="slot3"  kind="a/o"  num="0..1"  role="Weight(kg)"  class_constraint="integer"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="integer" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1434811583000_s27" 
+ type="NW"  label="slot4"  kind="a/o"  num="0..1"  role="Weight(kg)"  class_constraint="PositiveInteger"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="PositiveInteger" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1434812432000_s28" 
+ type="NW"  label="slot5"  kind="a/o"  num="0.."  role="Phone number"  class_constraint="string"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="string" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+</CONCEPT>
+<ISA id="1410986548000_isa24" parent="Vehicles" child="motorcycles" />
+<ISA id="1410986548000_isa25" parent="motorcycles" child="Bicycle" />
+<ISA id="1410986548000_isa26" parent="Bicycle" child="MountainBike" />
+<ISA id="1410986548000_isa27" parent="Bicycle" child="CityCycle" />
+<ISA id="1410986548000_isa28" parent="motorcycles" child="automaticmotorcycles" />
+<ISA id="1410986548000_isa29" parent="Handle" child="UptypeHandle" />
+<ISA id="1410986548000_isa30" parent="Handle" child="FlatHandle" />
+</W_CONCEPTS>
+<R_CONCEPTS>
+<CANVAS_SIZE w="4517" h="4934" />
+<CONCEPT id="1410986548000_n31" >
+<LABEL>Dependencies</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="420" y="360"/>
+<SLOTS>
+<SLOT id="1410986548000_s32" 
+ type="NW"  label="slot"  kind="p/i"  num="1"  role="LinkedProducts"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1410986548000_s33" 
+ type="NW"  label="slot2"  kind="p/i"  num="1"  role="LinkedProducts"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+</CONCEPT>
+<CONCEPT id="1410986548000_n34" >
+<LABEL>OwnershipRelationship</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="400" y="160"/>
+<SLOTS>
+<SLOT id="1410986548000_s35" 
+ type="NW"  label="slot2"  kind="p/i"  num="1"  role="Owner"  class_constraint="Human"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Human" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1410986548000_s36" 
+ type="NW"  label="slot"  kind="p/i"  num="1"  role="Possession"  class_constraint="Vehicles"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Vehicles" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+</CONCEPT>
+</R_CONCEPTS>
+<PRINTER>
+<PAGE_SETTINGS header="true" footer="true" cropmarks="true" scale="70" />
+<PAGE_FORMAT w="841.8897637795276" h="595.275590551181" iw="697.8897637795276" ih="451.2755905511811" ix="72.0" iy="72.0" />
+<PRINTER_SETTINGS orientation="1" printername="KONICA MINOLTA PagePro 1350W" />
+</PRINTER>
+</OE_FILE>

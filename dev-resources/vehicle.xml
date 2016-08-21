@@ -1,0 +1,2085 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OE_FILE filename="vehicle.xml" ont_id="1187617980000ont" >
+<FILENAME_ONT>vehicle.xml</FILENAME_ONT>
+<W_CONCEPTS hasAny="false">
+<CANVAS_SIZE w="2204" h="3000" x="232" y="492" />
+<CONCEPT id="1187617980000_n0" >
+<LABEL>二輪車</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1440" y="40"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1187617980000_s1" 
+ type="NW"  label="slot1"  kind="p/o"  num="1"  role="前輪role"  class_constraint="車輪"  rh_name="前輪"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="陸上乗り物$slot"/>
+<SLOTS>
+<SLOT id="1187617980000_s2" 
+ type="R2-2"  label="車輪:slot1"  kind="p/o"  num="*"  role="スポークロール"  class_constraint="スポーク"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="spoke-role" class_const="spoke" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s3" 
+ type="R2-2"  label="車輪:slot2"  kind="p/o"  num="1"  role="タイヤrole"  class_constraint="タイヤ"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<SLOTS>
+<SLOT id="1187617980000_s4" 
+ type="R2-2"  label="タイヤ:lbl"  kind="p/o"  num="1"  role="リムrole"  class_constraint="リム"  rh_name="リム"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="rim" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s5" 
+ type="R2-2"  label="タイヤ:lbl+"  kind="p/o"  num="1"  role="タイヤゴムrole"  class_constraint="タイヤゴム"  rh_name="タイヤゴム"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="tyre gum" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="tyre-role" class_const="tyre" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="front wheel role" class_const="wheel" rh_name ="front wheel" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s6" 
+ type="NW"  label="slot2"  kind="p/o"  num="1"  role="後輪role"  class_constraint="車輪"  rh_name="後輪"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1482" y="156"/>
+<PARENT_SLOT slot="陸上乗り物$slot"/>
+<SUB_L label="" def="" role_name="rear wheel role" class_const="wheel" rh_name ="rear wheel" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s7" 
+ type="NW"  label="slot3"  kind="p/o"  num="1"  role="フレームrole"  class_constraint="フレーム"  rh_name="フレーム"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1482" y="198"/>
+<SUB_L label="" def="" role_name="frame-role" class_const="frame" rh_name ="frame" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s8" 
+ type="NW"  label="slot4"  kind="p/o"  num="1"  role="ハンドルrole"  class_constraint="ハンドル"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1482" y="234"/>
+<SUB_L label="" def="" role_name="saddle-role" class_const="ハンドル" rh_name ="saddle" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s9" 
+ type="OR"  label="slot"  kind="a/o"  num="1"  role="自立性"  class_constraint="論理値"  rh_name=""  value="#False" >
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1486" y="312"/>
+<PARENT_SLOT slot="車$slot"/>
+<SUB_L label="" def="" role_name="" class_const="論理値" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s10" 
+ type="NW"  label="slot5"  kind="p/o"  num="0.."  role="かごrole"  class_constraint="かご"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1492" y="271"/>
+<SUB_L label="" def="" role_name="" class_const="かご" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST id="1187617980000_rc11" label="前後関係" ><POS x="1563" y="123"/>
+<ARC label="lbl">二輪車$slot1</ARC>
+<ARC label="lbl">二輪車$slot2</ARC>
+</R_CONST>
+<R_CONST id="1187617980000_rc12" label="接続関係" ><ARC label="lbl">二輪車$slot1%車輪:slot2%タイヤ:lbl</ARC>
+<ARC label="lbl">二輪車$slot3</ARC>
+</R_CONST>
+<R_CONST id="1187617980000_rc13" label="連動関係" ><POS x="1636" y="120"/>
+<ARC label="lbl">二輪車$slot4</ARC>
+<ARC label="lbl">二輪車$slot1</ARC>
+</R_CONST>
+</RELATIONS>
+<SUB_L label="Bicycle" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1187617980000_n14" >
+<LABEL>車輪</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="897" y="346"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1187617980000_s15" 
+ type="NW"  label="slot2"  kind="p/o"  num="1"  role="タイヤrole"  class_constraint="タイヤ"  rh_name="タイヤ"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="tyre" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="wheel" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1187617980000_n16" >
+<LABEL>フレーム</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="870" y="249"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="frame" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1187617980000_n17" >
+<LABEL>アルミフレーム</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="965" y="255"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="aluminium frame" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1187617980000_n18" >
+<LABEL>鉄フレーム</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="969" y="288"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="iron frame" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1187617980000_n19" >
+<LABEL>スポーツ車用車輪</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="977" y="342"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="sport tyre" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1187617980000_n20" >
+<LABEL>タイヤ</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="898" y="403"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="tyre" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1187617980000_n21" >
+<LABEL>サドル</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="884" y="274"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="saddle" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1187617980000_n22" >
+<LABEL>部品</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="755" y="213"/>
+<PART_TREE>close</PART_TREE>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="Component" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1187617980000_n23" >
+<LABEL>乗り物</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="854" y="46"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1187617980000_s24" 
+ type="NW"  label="slot3"  kind="p/o"  num="1.."  role="動力源role"  class_constraint="もの"  rh_name="動力源"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Thing" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s25" 
+ type="NW"  label="slot4"  kind="a/o"  num="1"  role="移動空間"  class_constraint="自然空間"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="自然空間" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s26" 
+ type="OR"  label="slot32"  kind="p/o"  num="1.."  role="乗客role"  class_constraint="人間"  rh_name="乗客"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="人工物$slot3"/>
+<SUB_L label="" def="" role_name="" class_const="Human" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s27" 
+ type="OR"  label="slot"  kind="p/o"  num="1.."  role="機能"  class_constraint="人間の位置を変える"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="機能物$slot2"/>
+<SLOTS>
+<SLOT id="1187617980000_s28" 
+ type="R2-2"  label="人間の位置を変える:slot2"  kind="p/o"  num="1.."  role="対象物"  class_constraint="人間"  rh_name="乗客"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="位置を変える$slot2"/>
+<SLOTS>
+<SLOT id="1187617980000_s29" 
+ type="R2-2"  label="slot"  kind="a/o"  num="1"  role="初期状態"  class_constraint="位置"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="位置を変える$slot2%slot"/>
+<SLOTS>
+<SLOT id="1187617980000_s30" 
+ type="R2-1"  label="slot"  kind="a/o"  num="1"  role="時間点"  class_constraint="時間点"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="位置を変える$slot2%slot%slot"/>
+</SLOT>
+</SLOTS>
+</SLOT>
+<SLOT id="1187617980000_s31" 
+ type="R2-2"  label="slot2"  kind="a/o"  num="1"  role="最終状態"  class_constraint="位置"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="位置を変える$slot2%slot2"/>
+<SLOTS>
+<SLOT id="1187617980000_s32" 
+ type="R2-1"  label="slot"  kind="a/o"  num="1"  role="時間点"  class_constraint="時間点"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="位置を変える$slot2%slot2%slot"/>
+</SLOT>
+</SLOTS>
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="Human" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="人間の位置を変える" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST id="1187617980000_rc33" label="同じ" ><POS x="1177" y="206"/>
+<ARC label="1">乗り物$slot32</ARC>
+<ARC label="2">乗り物$slot%人間の位置を変える:slot2</ARC>
+</R_CONST>
+</RELATIONS>
+<SUB_L label="Vehicle" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1187617980000_n34" >
+<LABEL>車</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1219" y="42"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1187617980000_s35" 
+ type="OR"  label="slot4"  kind="a/o"  num="1"  role="移動空間"  class_constraint="道路空間"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="陸上乗り物$slot4"/>
+<SUB_L label="" def="" role_name="" class_const="道路空間" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s36" 
+ type="NW"  label="slot"  kind="a/o"  num="1"  role="自立性"  class_constraint="論理値"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="論理値" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="Ground-Vehicle" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1187617980000_n37" >
+<LABEL>もの</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="280" y="36"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1187617980000_s38" 
+ type="NW"  label="slot"  kind="a/o"  num="1"  role="形状"  class_constraint="形状"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="形状" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s39" 
+ type="NW"  label="slot2"  kind="a/o"  num="1"  role="重さ属性R"  class_constraint="重さ"  rh_name="重さ属性値"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="重さ" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s40" 
+ type="NW"  label="slot3"  kind="a/o"  num="1"  role="幅R"  class_constraint="長さ"  rh_name="幅値"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="長さ" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s41" 
+ type="NW"  label="slot4"  kind="a/o"  num="1"  role="色属性R"  class_constraint="#色"  rh_name="色値"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="#色" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="Thing" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1187617980000_n42" >
+<LABEL>人間</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="553" y="278"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="Human" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1187617980000_n43" >
+<LABEL>エンジン</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="870" y="522"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="Engine" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1187617980000_n44" >
+<LABEL>船舶</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1113" y="334"/>
+<SLOTS>
+<SLOT id="1187617980000_s45" 
+ type="OR"  label="slot4"  kind="a/o"  num="1"  role="移動空間"  class_constraint="水環境"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="乗り物$slot4"/>
+<SUB_L label="" def="" role_name="" class_const="水環境" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="Ship" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1187617980000_n46" >
+<LABEL>自転車</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1690" y="37"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1187617980000_s47" 
+ type="OR"  label="slot3"  kind="p/o"  num="1"  role="動力源"  class_constraint="人間"  rh_name="こぎ手"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="乗り物$slot3"/>
+<SLOTS>
+<SLOT id="1187617980000_s48" 
+ type="R2-1"  label="slot"  kind="a/o"  num="1"  role="最大こぎ時間"  class_constraint="時間長"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="時間長" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="Human" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s49" 
+ type="NW"  label="slot"  kind="p/o"  num="2"  role="ペダル"  class_constraint="ペダル"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="ペダル" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s50" 
+ type="OR"  label="slot2"  kind="p/o"  num="1"  role="操作者role"  class_constraint="人間"  rh_name="操作者"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="人工物$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="Human" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST id="1187617980000_rc51" label="同じ" ><POS x="1892" y="86"/>
+<ARC label="lbl">自転車$slot3</ARC>
+<ARC label="lbl">自転車$slot2</ARC>
+</R_CONST>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n52" >
+<LABEL>自動二輪車</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1671" y="220"/>
+<SLOTS>
+<SLOT id="1187617980000_s53" 
+ type="OR"  label="slot3"  kind="p/o"  num="1"  role="動力源"  class_constraint="エンジン"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="乗り物$slot3"/>
+<SUB_L label="" def="" role_name="" class_const="Engine" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s54" 
+ type="OR"  label="slot4"  kind="p/o"  num="1"  role="ハンドルrole"  class_constraint="ハンドル"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="二輪車$slot4"/>
+<SLOTS>
+<SLOT id="1187617980000_s55" 
+ type="R2-2"  label="slot"  kind="p/o"  num="1.."  role="スロットルrole"  class_constraint="スロットル"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="スロットル" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="ハンドル" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n56" >
+<LABEL>ペダル</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="895" y="428"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n57" >
+<LABEL>スロットル</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="859" y="556"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n58" >
+<LABEL>四輪車</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1424" y="348"/>
+<SLOTS>
+<SLOT id="1187617980000_s59" 
+ type="OR"  label="slot"  kind="p/o"  num="4"  role="車輪"  class_constraint="車輪"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="陸上乗り物$slot"/>
+<SUB_L label="" def="" role_name="" class_const="wheel" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s60" 
+ type="OR"  label="slot2"  kind="a/o"  num="1"  role="自立性"  class_constraint="論理値"  rh_name=""  value="#True" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="車$slot"/>
+<SUB_L label="" def="" role_name="" class_const="論理値" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n61" >
+<LABEL>ANY</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="4" y="4"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n62" >
+<LABEL>陸上乗り物</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1067" y="41"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1187617980000_s63" 
+ type="OR"  label="slot4"  kind="a/o"  num="1"  role="移動空間"  class_constraint="陸"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="乗り物$slot4"/>
+<SUB_L label="" def="" role_name="" class_const="陸" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s64" 
+ type="NW"  label="slot"  kind="p/o"  num="1.."  role="車輪"  class_constraint="車輪"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="wheel" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n65" >
+<LABEL>鉄道車両</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1211" y="148"/>
+<SLOTS>
+<SLOT id="1187617980000_s66" 
+ type="OR"  label="slot4"  kind="a/o"  num="1"  role="移動空間"  class_constraint="軌道空間"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="陸上乗り物$slot4"/>
+<SUB_L label="" def="" role_name="" class_const="軌道空間" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n67" >
+<LABEL>航空機</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1109" y="234"/>
+<SLOTS>
+<SLOT id="1187617980000_s68" 
+ type="OR"  label="slot4"  kind="a/o"  num="1"  role="移動空間"  class_constraint="空"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="乗り物$slot4"/>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s69" 
+ type="NW"  label="slot"  kind="p/o"  num="2.."  role="翼"  class_constraint="翼"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n70" >
+<LABEL>人工物</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="533" y="42"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1187617980000_s71" 
+ type="NW"  label="slot2"  kind="p/o"  num="1"  role="操作者role"  class_constraint="人間"  rh_name="操作者"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Human" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s72" 
+ type="NW"  label="slot3"  kind="p/o"  num="1.."  role="対象物role"  class_constraint="もの"  rh_name="対象物"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Thing" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n73" >
+<LABEL>作用</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="522" y="707"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1187617980000_s74" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="主体R"  class_constraint="もの"  rh_name="主体"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Thing" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s75" 
+ type="NW"  label="slot2"  kind="p/o"  num="1.."  role="対象物R"  class_constraint="具体物"  rh_name="対象物"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SLOTS>
+<SLOT id="1187617980000_s76" 
+ type="R2-2"  label="slot"  kind="a/o"  num="1"  role="初期状態"  class_constraint="属性"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SLOTS>
+<SLOT id="1187617980000_s77" 
+ type="R2-1"  label="slot"  kind="a/o"  num="1"  role="初期時刻"  class_constraint="時刻"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="時刻" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="属性" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s78" 
+ type="R2-1"  label="slot2"  kind="a/o"  num="1.."  role="最終状態"  class_constraint="属性"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SLOTS>
+<SLOT id="1187617980000_s79" 
+ type="R2-1"  label="slot"  kind="a/o"  num="1"  role="最終時刻"  class_constraint="時刻"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="時刻" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="属性" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="具体物" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST id="1187617980000_rc80" label="時間的非重複前後関係" ><POS x="766" y="897"/>
+<ARC label="前">作用$slot2%slot%slot</ARC>
+<ARC label="後">作用$slot2%slot2%slot</ARC>
+</R_CONST>
+<R_CONST id="1187617980000_rc81" label="異なる" ><POS x="773" y="812"/>
+<ARC label="1">作用$slot2%slot</ARC>
+<ARC label="2">作用$slot2%slot2</ARC>
+</R_CONST>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n82" >
+<LABEL>位置を変える</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="775" y="723"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1187617980000_s83" 
+ type="OR"  label="slot"  kind="p/o"  num="1"  role="主体R"  class_constraint="もの"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="作用$slot"/>
+<SUB_L label="" def="" role_name="" class_const="具体物" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s84" 
+ type="OR"  label="slot2"  kind="p/o"  num="1.."  role="対象物R"  class_constraint="具体物"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="作用$slot2"/>
+<SLOTS>
+<SLOT id="1187617980000_s85" 
+ type="R2-2"  label="slot"  kind="a/o"  num="1"  role="初期状態"  class_constraint="位置"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="作用$slot2%slot"/>
+<SLOTS>
+<SLOT id="1187617980000_s86" 
+ type="R2-1"  label="slot"  kind="a/o"  num="1"  role="時間点"  class_constraint="時間点"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="作用$slot2%slot%slot"/>
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="位置" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s87" 
+ type="R2-1"  label="slot2"  kind="a/o"  num="1"  role="最終状態"  class_constraint="位置"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="作用$slot2%slot2"/>
+<SLOTS>
+<SLOT id="1187617980000_s88" 
+ type="R2-1"  label="slot"  kind="a/o"  num="1"  role="時間点"  class_constraint="時間点"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="作用$slot2%slot2%slot"/>
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="位置" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="具体物" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n89" >
+<LABEL>動物</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="501" y="270"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n90" >
+<LABEL>人間の位置を変える</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="964" y="723"/>
+<SLOTS>
+<SLOT id="1187617980000_s91" 
+ type="OR"  label="slot"  kind="p/o"  num="1"  role="主体R"  class_constraint="もの"  rh_name="乗り物"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="位置を変える$slot"/>
+<SUB_L label="" def="" role_name="" class_const="Thing" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s92" 
+ type="OR"  label="slot2"  kind="p/o"  num="1.."  role="対象物R"  class_constraint="人間"  rh_name="乗客"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="位置を変える$slot2"/>
+<SLOTS>
+<SLOT id="1187617980000_s93" 
+ type="R2-2"  label="slot"  kind="a/o"  num="1"  role="初期状態"  class_constraint="位置"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="位置を変える$slot2%slot"/>
+<SLOTS>
+<SLOT id="1187617980000_s94" 
+ type="R2-1"  label="slot"  kind="a/o"  num="1"  role="時間点"  class_constraint="時間点"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="位置を変える$slot2%slot%slot"/>
+</SLOT>
+</SLOTS>
+</SLOT>
+<SLOT id="1187617980000_s95" 
+ type="R2-2"  label="slot2"  kind="a/o"  num="1"  role="最終状態"  class_constraint="位置"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="位置を変える$slot2%slot2"/>
+<SLOTS>
+<SLOT id="1187617980000_s96" 
+ type="R2-1"  label="slot"  kind="a/o"  num="1"  role="時間点"  class_constraint="時間点"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="位置を変える$slot2%slot2%slot"/>
+</SLOT>
+</SLOTS>
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="Human" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n97" >
+<LABEL>具体物</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="128" y="24"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1187617980000_s98" 
+ type="NW"  label="slot"  kind="a/o"  num="1"  role="居場所"  class_constraint="位置"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="位置" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n99" >
+<LABEL>馬</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="557" y="314"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n100" >
+<LABEL>実在物</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="56" y="20"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n101" >
+<LABEL>抽象物</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="115" y="107"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n102" >
+<LABEL>プロセス</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="357" y="341"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n103" >
+<LABEL>行為</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="529" y="624"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n104" >
+<LABEL>製品</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="753" y="36"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n105" >
+<LABEL>構造系部品</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="782" y="242"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n106" >
+<LABEL>運動伝達系部品</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="785" y="345"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n107" >
+<LABEL>動力系部品</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="774" y="502"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n108" >
+<LABEL>社会システム</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="745" y="573"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n109" >
+<LABEL>交通システム</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="857" y="585"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1187617980000_s110" 
+ type="NW"  label="slot"  kind="p/o"  num="1.."  role="移動体"  class_constraint="乗り物"  rh_name="乗り物rh2"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Vehicle" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n111" >
+<LABEL>操作系部品</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="797" y="444"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n112" >
+<LABEL>ハンドル</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="902" y="456"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1187617980000_s113" 
+ type="NW"  label="slot"  kind="p/o"  num="1.."  role="レバーrole"  class_constraint="ブレーキレバー"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="ブレーキレバー" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n114" >
+<LABEL>アップ型ハンドル</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1137" y="434"/>
+<SLOTS>
+<SLOT id="1187617980000_s115" 
+ type="OR"  label="slot"  kind="a/o"  num="1"  role="形状"  class_constraint="湾曲形状"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="もの$slot"/>
+<SUB_L label="" def="" role_name="" class_const="湾曲形状" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n116" >
+<LABEL>フラット型ハンドル</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1137" y="502"/>
+<SLOTS>
+<SLOT id="1187617980000_s117" 
+ type="OR"  label="slot"  kind="a/o"  num="1"  role="形状"  class_constraint="直線形状"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="もの$slot"/>
+<SUB_L label="" def="" role_name="" class_const="直線形状" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n118" >
+<LABEL>属性</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="91" y="583"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n119" >
+<LABEL>形状</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="257" y="816"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n120" >
+<LABEL>湾曲形状</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="312" y="857"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n121" >
+<LABEL>直線形状</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="308" y="826"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n122" >
+<LABEL>シティサイクル</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1907" y="37"/>
+<SLOTS>
+<SLOT id="1187617980000_s123" 
+ type="OR"  label="slot4"  kind="p/o"  num="1"  role="ハンドルrole"  class_constraint="アップ型ハンドル"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="二輪車$slot4"/>
+<SUB_L label="" def="" role_name="" class_const="アップ型ハンドル" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s124" 
+ type="OR"  label="slot5"  kind="p/o"  num="1"  role="かごrole"  class_constraint="かご"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="二輪車$slot5"/>
+<SUB_L label="" def="" role_name="" class_const="かご" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n125" >
+<LABEL>マウンテンバイク</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1916" y="147"/>
+<SLOTS>
+<SLOT id="1187617980000_s126" 
+ type="OR"  label="slot4"  kind="p/o"  num="1"  role="ハンドルrole"  class_constraint="フラット型ハンドル"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="二輪車$slot4"/>
+<SUB_L label="" def="" role_name="" class_const="フラット型ハンドル" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n127" >
+<LABEL>陸</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="241" y="436"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n128" >
+<LABEL>空</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="242" y="468"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n129" >
+<LABEL>水環境</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="219" y="499"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n130" >
+<LABEL>海</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="286" y="490"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n131" >
+<LABEL>川</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="285" y="529"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n132" >
+<LABEL>社会システム設備</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="745" y="641"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n133" >
+<LABEL>道路</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="882" y="653"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n134" >
+<LABEL>鉄道軌道</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="875" y="679"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n135" >
+<LABEL>位置</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="247" y="875"/>
+<SLOTS>
+<SLOT id="1187617980000_s136" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="値"  class_constraint="空間"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="空間" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n137" >
+<LABEL>公共交通システム</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="989" y="585"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n138" >
+<LABEL>鉄道システム</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1181" y="583"/>
+<SLOTS>
+<SLOT id="1187617980000_s139" 
+ type="NW"  label="slot"  kind="p/o"  num="1.."  role="設備"  class_constraint="鉄道軌道"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="slot" def="" role_name="設備" class_const="鉄道軌道" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s140" 
+ type="OR"  label="slot2"  kind="p/o"  num="1.."  role="列車role"  class_constraint="鉄道車両"  rh_name="列車"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="交通システム$slot"/>
+<SLOTS>
+<SLOT id="1187617980000_s141" 
+ type="R2-2"  label="slot"  kind="p/o"  num="1"  role="行き先"  class_constraint="駅"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="駅" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="鉄道車両" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="鉄道システム" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1187617980000_n142" >
+<LABEL>バスシステム</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1116" y="686"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n143" >
+<LABEL>工業製品物</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="653" y="40"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n144" >
+<LABEL>社会システム物</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="685" y="537"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n145" >
+<LABEL>現象</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="459" y="631"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n146" >
+<LABEL>機能物</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="393" y="41"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1187617980000_s147" 
+ type="NW"  label="slot2"  kind="p/o"  num="1.."  role="機能role"  class_constraint="作用"  rh_name="機能"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="作用" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n148" >
+<LABEL>意志所有物</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="398" y="213"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n149" >
+<LABEL>単一体</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="477" y="238"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n150" >
+<LABEL>基底</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="60" y="352"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n151" >
+<LABEL>空間</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="116" y="412"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n152" >
+<LABEL>自然空間</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="158" y="438"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n153" >
+<LABEL>時間</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="105" y="477"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n154" >
+<LABEL>質(quality)</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="56" y="544"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n155" >
+<LABEL>定量的属性</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="168" y="639"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1187617980000_s156" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="値R"  class_constraint="実数"  rh_name="値"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="実数" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s157" 
+ type="NW"  label="slot2"  kind="p/o"  num="1"  role="単位"  class_constraint="単位"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="単位" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n158" >
+<LABEL>定性的属性</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="142" y="753"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n159" >
+<LABEL>偶有的属性</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="103" y="795"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n160" >
+<LABEL>基底依存属性</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="144" y="845"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n161" >
+<LABEL>挙動</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="499" y="663"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n162" >
+<LABEL>重さ</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="293" y="672"/>
+<SLOTS>
+<SLOT id="1187617980000_s163" 
+ type="OR"  label="slot2"  kind="p/o"  num="1"  role="単位"  class_constraint="#重さ単位"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="定量的属性$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="#重さ単位" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n164" >
+<LABEL>長さ</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="287" y="610"/>
+<SLOTS>
+<SLOT id="1187617980000_s165" 
+ type="OR"  label="slot2"  kind="p/o"  num="1"  role="単位"  class_constraint="#長さ単位"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="定量的属性$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="#長さ単位" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n166" >
+<LABEL>単位</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="145" y="188"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n167" >
+<LABEL>長さ単位</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="189" y="201"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n168" >
+<LABEL>重さ単位</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="189" y="281"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n169" >
+<LABEL>#km</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="253" y="268"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n170" >
+<LABEL>#m</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="257" y="244"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n171" >
+<LABEL>#cm</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="257" y="220"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n172" >
+<LABEL>#kg</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="256" y="330"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n173" >
+<LABEL>#g</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="261" y="298"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n174" >
+<LABEL>ロール</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="43" y="944"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1187617980000_s175" 
+ type="NW"  label="slot"  kind="p/i"  num="1"  role="担い手role"  class_constraint="ANY"  rh_name="ホルダー"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="ANY" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s176" 
+ type="NW"  label="slot2"  kind="p/i"  num="1"  role="依存先role"  class_constraint="ANY"  rh_name="コンテキスト"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="ANY" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s177" 
+ type="NW"  label="slot3"  kind="p/o"  num="0.."  role="部分role"  class_constraint="ロール"  rh_name="ロールパート"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="ロール" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n178" >
+<LABEL>属性ロール</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="210" y="954"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1187617980000_s179" 
+ type="OR"  label="slot"  kind="p/i"  num="1"  role="担い手role"  class_constraint="属性"  rh_name="属性値"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="ロール$slot"/>
+<SUB_L label="" def="" role_name="" class_const="属性" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n180" >
+<LABEL>長さ属性ロール（長さR）</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="968" y="1100"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1187617980000_s181" 
+ type="OR"  label="slot"  kind="p/i"  num="1"  role="担い手role"  class_constraint="長さ"  rh_name="長さ属性値"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="属性ロール$slot"/>
+<SUB_L label="" def="" role_name="" class_const="長さ" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n182" >
+<LABEL>幅R</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1105" y="924"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n183" >
+<LABEL>高さR</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="874" y="948"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n184" >
+<LABEL>重さ属性ロール（重さ属性R）</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="679" y="1148"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n185" >
+<LABEL>色属性ロール（色属性R）</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="397" y="1120"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n186" >
+<LABEL>色</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="259" y="737"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n187" >
+<LABEL>#赤</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="306" y="736"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="NEW" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1187617980000_n188" >
+<LABEL>#青</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="317" y="762"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="NEW_2" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1187617980000_n189" >
+<LABEL>数</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="171" y="136"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n190" >
+<LABEL>静的</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="417" y="385"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n191" >
+<LABEL>動的</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="421" y="552"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n192" >
+<LABEL>挙動/行為</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="466" y="589"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n193" >
+<LABEL>状態</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="490" y="370"/>
+<PART_TREE>close</PART_TREE>
+<SLOTS>
+<SLOT id="1187617980000_s194" 
+ type="NW"  label="slot"  kind="a/o"  num="1"  role="保有"  class_constraint="具体物"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="具体物" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n195" >
+<LABEL>状況</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="497" y="405"/>
+<PART_TREE>close</PART_TREE>
+<SLOTS>
+<SLOT id="1187617980000_s196" 
+ type="NW"  label="slot"  kind="p/o"  num="2.."  role="参加物状態"  class_constraint="状態"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="状態" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n197" >
+<LABEL>具体物属性ロール</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="581" y="1022"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1187617980000_s198" 
+ type="OR"  label="slot2"  kind="p/i"  num="1"  role="依存先role"  class_constraint="具体物"  rh_name="属性保有物"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="ロール$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="具体物" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n199" >
+<LABEL>#黄色</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="320" y="788"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n200" >
+<LABEL>時刻</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="149" y="492"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n201" >
+<LABEL>時区間</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="155" y="519"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n202" >
+<LABEL>時間長</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="144" y="550"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n203" >
+<LABEL>実数</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="196" y="156"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n204" >
+<LABEL>論理値</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="149" y="362"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n205" >
+<LABEL>#True</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="206" y="362"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n206" >
+<LABEL>#False</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="202" y="390"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n207" >
+<LABEL>翼</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="880" y="296"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n208" >
+<LABEL>ブレーキレバー</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="938" y="520"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n209" >
+<LABEL>駅</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="872" y="706"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n210" >
+<LABEL>かご</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="880" y="321"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n211" >
+<LABEL>本質的属性</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="121" y="613"/>
+<PART_TREE>close</PART_TREE>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n212" >
+<LABEL>性質</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="73" y="872"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n213" >
+<LABEL>道路空間</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="272" y="375"/>
+<SLOTS>
+<SLOT id="1187617980000_s214" 
+ type="NW"  label="slot"  kind="p/o"  num="1.."  role="道路"  class_constraint="道路"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<SUB_L label="" def="" role_name="" class_const="道路" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n215" >
+<LABEL>軌道空間</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="275" y="434"/>
+<SLOTS>
+<SLOT id="1187617980000_s216" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="軌道"  class_constraint="鉄道軌道"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<ISA id="1187617980000_isa217" parent="フレーム" child="アルミフレーム" />
+<ISA id="1187617980000_isa218" parent="フレーム" child="鉄フレーム" />
+<ISA id="1187617980000_isa219" parent="車輪" child="スポーツ車用車輪" />
+<ISA id="1187617980000_isa220" parent="車" child="二輪車" />
+<ISA id="1187617980000_isa221" parent="乗り物" child="船舶" />
+<ISA id="1187617980000_isa222" parent="二輪車" child="自転車" />
+<ISA id="1187617980000_isa223" parent="二輪車" child="自動二輪車" />
+<ISA id="1187617980000_isa224" parent="車" child="四輪車" />
+<ISA id="1187617980000_isa225" parent="乗り物" child="陸上乗り物" />
+<ISA id="1187617980000_isa226" parent="陸上乗り物" child="車" />
+<ISA id="1187617980000_isa227" parent="陸上乗り物" child="鉄道車両" />
+<ISA id="1187617980000_isa228" parent="乗り物" child="航空機" />
+<ISA id="1187617980000_isa229" parent="作用" child="位置を変える" />
+<ISA id="1187617980000_isa230" parent="動物" child="人間" />
+<ISA id="1187617980000_isa231" parent="位置を変える" child="人間の位置を変える" />
+<ISA id="1187617980000_isa232" parent="動物" child="馬" />
+<ISA id="1187617980000_isa233" parent="ANY" child="実在物" />
+<ISA id="1187617980000_isa234" parent="実在物" child="抽象物" />
+<ISA id="1187617980000_isa235" parent="具体物" child="もの" />
+<ISA id="1187617980000_isa236" parent="具体物" child="プロセス" />
+<ISA id="1187617980000_isa237" parent="実在物" child="具体物" />
+<ISA id="1187617980000_isa238" parent="製品" child="乗り物" />
+<ISA id="1187617980000_isa239" parent="部品" child="構造系部品" />
+<ISA id="1187617980000_isa240" parent="構造系部品" child="フレーム" />
+<ISA id="1187617980000_isa241" parent="構造系部品" child="サドル" />
+<ISA id="1187617980000_isa242" parent="部品" child="運動伝達系部品" />
+<ISA id="1187617980000_isa243" parent="運動伝達系部品" child="車輪" />
+<ISA id="1187617980000_isa244" parent="運動伝達系部品" child="タイヤ" />
+<ISA id="1187617980000_isa245" parent="運動伝達系部品" child="ペダル" />
+<ISA id="1187617980000_isa246" parent="部品" child="動力系部品" />
+<ISA id="1187617980000_isa247" parent="動力系部品" child="エンジン" />
+<ISA id="1187617980000_isa248" parent="動力系部品" child="スロットル" />
+<ISA id="1187617980000_isa249" parent="社会システム" child="交通システム" />
+<ISA id="1187617980000_isa250" parent="部品" child="操作系部品" />
+<ISA id="1187617980000_isa251" parent="操作系部品" child="ハンドル" />
+<ISA id="1187617980000_isa252" parent="ハンドル" child="アップ型ハンドル" />
+<ISA id="1187617980000_isa253" parent="ハンドル" child="フラット型ハンドル" />
+<ISA id="1187617980000_isa254" parent="形状" child="湾曲形状" />
+<ISA id="1187617980000_isa255" parent="形状" child="直線形状" />
+<ISA id="1187617980000_isa256" parent="自転車" child="シティサイクル" />
+<ISA id="1187617980000_isa257" parent="自転車" child="マウンテンバイク" />
+<ISA id="1187617980000_isa258" parent="水環境" child="海" />
+<ISA id="1187617980000_isa259" parent="水環境" child="川" />
+<ISA id="1187617980000_isa260" parent="社会システム設備" child="道路" />
+<ISA id="1187617980000_isa261" parent="社会システム設備" child="鉄道軌道" />
+<ISA id="1187617980000_isa262" parent="交通システム" child="公共交通システム" />
+<ISA id="1187617980000_isa263" parent="公共交通システム" child="鉄道システム" />
+<ISA id="1187617980000_isa264" parent="公共交通システム" child="バスシステム" />
+<ISA id="1187617980000_isa265" parent="人工物" child="工業製品物" />
+<ISA id="1187617980000_isa266" parent="工業製品物" child="製品" />
+<ISA id="1187617980000_isa267" parent="工業製品物" child="部品" />
+<ISA id="1187617980000_isa268" parent="人工物" child="社会システム物" />
+<ISA id="1187617980000_isa269" parent="社会システム物" child="社会システム" />
+<ISA id="1187617980000_isa270" parent="社会システム物" child="社会システム設備" />
+<ISA id="1187617980000_isa271" parent="もの" child="機能物" />
+<ISA id="1187617980000_isa272" parent="機能物" child="人工物" />
+<ISA id="1187617980000_isa273" parent="もの" child="意志所有物" />
+<ISA id="1187617980000_isa274" parent="意志所有物" child="単一体" />
+<ISA id="1187617980000_isa275" parent="単一体" child="動物" />
+<ISA id="1187617980000_isa276" parent="ANY" child="基底" />
+<ISA id="1187617980000_isa277" parent="基底" child="空間" />
+<ISA id="1187617980000_isa278" parent="空間" child="自然空間" />
+<ISA id="1187617980000_isa279" parent="自然空間" child="陸" />
+<ISA id="1187617980000_isa280" parent="自然空間" child="空" />
+<ISA id="1187617980000_isa281" parent="自然空間" child="水環境" />
+<ISA id="1187617980000_isa282" parent="基底" child="時間" />
+<ISA id="1187617980000_isa283" parent="ANY" child="質(quality)" />
+<ISA id="1187617980000_isa284" parent="質(quality)" child="属性" />
+<ISA id="1187617980000_isa285" parent="定性的属性" child="形状" />
+<ISA id="1187617980000_isa286" parent="偶有的属性" child="基底依存属性" />
+<ISA id="1187617980000_isa287" parent="基底依存属性" child="位置" />
+<ISA id="1187617980000_isa288" parent="挙動" child="作用" />
+<ISA id="1187617980000_isa289" parent="定量的属性" child="重さ" />
+<ISA id="1187617980000_isa290" parent="定量的属性" child="長さ" />
+<ISA id="1187617980000_isa291" parent="抽象物" child="単位" />
+<ISA id="1187617980000_isa292" parent="単位" child="長さ単位" />
+<ISA id="1187617980000_isa293" parent="単位" child="重さ単位" />
+<ISA id="1187617980000_isa294" parent="長さ単位" child="#km" />
+<ISA id="1187617980000_isa295" parent="長さ単位" child="#m" />
+<ISA id="1187617980000_isa296" parent="長さ単位" child="#cm" />
+<ISA id="1187617980000_isa297" parent="重さ単位" child="#kg" />
+<ISA id="1187617980000_isa298" parent="重さ単位" child="#g" />
+<ISA id="1187617980000_isa299" parent="ANY" child="ロール" />
+<ISA id="1187617980000_isa300" parent="ロール" child="属性ロール" />
+<ISA id="1187617980000_isa301" parent="長さ属性ロール（長さR）" child="幅R" />
+<ISA id="1187617980000_isa302" parent="長さ属性ロール（長さR）" child="高さR" />
+<ISA id="1187617980000_isa303" parent="定性的属性" child="色" />
+<ISA id="1187617980000_isa304" parent="色" child="#赤" />
+<ISA id="1187617980000_isa305" parent="色" child="#青" />
+<ISA id="1187617980000_isa306" parent="抽象物" child="数" />
+<ISA id="1187617980000_isa307" parent="プロセス" child="静的" />
+<ISA id="1187617980000_isa308" parent="プロセス" child="動的" />
+<ISA id="1187617980000_isa309" parent="動的" child="挙動/行為" />
+<ISA id="1187617980000_isa310" parent="挙動/行為" child="挙動" />
+<ISA id="1187617980000_isa311" parent="挙動/行為" child="行為" />
+<ISA id="1187617980000_isa312" parent="動的" child="現象" />
+<ISA id="1187617980000_isa313" parent="静的" child="状態" />
+<ISA id="1187617980000_isa314" parent="静的" child="状況" />
+<ISA id="1187617980000_isa315" parent="属性ロール" child="具体物属性ロール" />
+<ISA id="1187617980000_isa316" parent="具体物属性ロール" child="長さ属性ロール（長さR）" />
+<ISA id="1187617980000_isa317" parent="具体物属性ロール" child="重さ属性ロール（重さ属性R）" />
+<ISA id="1187617980000_isa318" parent="具体物属性ロール" child="色属性ロール（色属性R）" />
+<ISA id="1187617980000_isa319" parent="色" child="#黄色" />
+<ISA id="1187617980000_isa320" parent="時間" child="時刻" />
+<ISA id="1187617980000_isa321" parent="時間" child="時区間" />
+<ISA id="1187617980000_isa322" parent="時間" child="時間長" />
+<ISA id="1187617980000_isa323" parent="数" child="実数" />
+<ISA id="1187617980000_isa324" parent="抽象物" child="論理値" />
+<ISA id="1187617980000_isa325" parent="論理値" child="#True" />
+<ISA id="1187617980000_isa326" parent="論理値" child="#False" />
+<ISA id="1187617980000_isa327" parent="構造系部品" child="翼" />
+<ISA id="1187617980000_isa328" parent="操作系部品" child="ブレーキレバー" />
+<ISA id="1187617980000_isa329" parent="社会システム設備" child="駅" />
+<ISA id="1187617980000_isa330" parent="構造系部品" child="かご" />
+<ISA id="1187617980000_isa331" parent="属性" child="本質的属性" />
+<ISA id="1187617980000_isa332" parent="本質的属性" child="定量的属性" />
+<ISA id="1187617980000_isa333" parent="本質的属性" child="定性的属性" />
+<ISA id="1187617980000_isa334" parent="属性" child="偶有的属性" />
+<ISA id="1187617980000_isa335" parent="質(quality)" child="性質" />
+<ISA id="1187617980000_isa336" parent="陸" child="道路空間" />
+<ISA id="1187617980000_isa337" parent="陸" child="軌道空間" />
+</W_CONCEPTS>
+<R_CONCEPTS>
+<CANVAS_SIZE w="2000" h="3000" />
+<CONCEPT id="1187617980000_n338" >
+<LABEL>接続関係</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="801" y="479"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1187617980000_s339" 
+ type="NW"  label="slot1"  kind="p/i"  num="1"  role="接続部品"  class_constraint="部品"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="Connected" class_const="Component" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s340" 
+ type="NW"  label="slot2"  kind="p/i"  num="1"  role="接続部品"  class_constraint="部品"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="Connected" class_const="Component" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="Connection-relation" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1187617980000_n341" >
+<LABEL>連動関係</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="758" y="191"/>
+<SLOTS>
+<SLOT id="1187617980000_s342" 
+ type="NW"  label="slot1"  kind="p/i"  num="1"  role="連動部品"  class_constraint="部品"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="接続関係$slot1"/>
+<SUB_L label="" def="" role_name="Linked" class_const="Component" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s343" 
+ type="NW"  label="slot2"  kind="p/i"  num="1"  role="連動部品"  class_constraint="部品"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="接続関係$slot2"/>
+<SUB_L label="" def="" role_name="Linked" class_const="Component" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="Linked-connection" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1187617980000_n344" >
+<LABEL>前後関係</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="352" y="141"/>
+<SLOTS>
+<SLOT id="1187617980000_s345" 
+ type="NW"  label="slot1"  kind="p/i"  num="1"  role="前側"  class_constraint="もの"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="front" class_const="Thing" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s346" 
+ type="NW"  label="slot2"  kind="p/i"  num="1"  role="後ろ側"  class_constraint="もの"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="rear" class_const="object" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="front-rear relation" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1187617980000_n347" >
+<LABEL>構造的関係</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="597" y="115"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="Structural-relation" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1187617980000_n348" >
+<LABEL>同じ</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="38" y="376"/>
+<SLOTS>
+<SLOT id="1187617980000_s349" 
+ type="NW"  label="slot"  kind="p/i"  num="1"  role="1"  class_constraint="ANY"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="ANY" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s350" 
+ type="NW"  label="slot2"  kind="p/i"  num="1"  role="2"  class_constraint="ANY"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="ANY" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n351" >
+<LABEL>異なる</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="174" y="382"/>
+<SLOTS>
+<SLOT id="1187617980000_s352" 
+ type="NW"  label="slot"  kind="p/i"  num="1"  role="1"  class_constraint="ANY"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="slot" def="" role_name="1" class_const="ANY" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s353" 
+ type="NW"  label="slot2"  kind="p/i"  num="1"  role="2"  class_constraint="ANY"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="slot2" def="" role_name="2" class_const="ANY" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="同じ" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1187617980000_n354" >
+<LABEL>時間的関係</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="477" y="246"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n355" >
+<LABEL>時間的非重複前後関係</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1002" y="331"/>
+<SLOTS>
+<SLOT id="1187617980000_s356" 
+ type="NW"  label="slot"  kind="p/i"  num="1"  role="前"  class_constraint="ANY"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="ANY" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s357" 
+ type="NW"  label="slot2"  kind="p/i"  num="1"  role="後"  class_constraint="ANY"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="ANY" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1187617980000_n358" >
+<LABEL>所有関係</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="471" y="528"/>
+<SLOTS>
+<SLOT id="1187617980000_s359" 
+ type="NW"  label="slot"  kind="p/i"  num="1"  role="所有者"  class_constraint="人間"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Human" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1187617980000_s360" 
+ type="NW"  label="slot2"  kind="p/i"  num="1"  role="所有物"  class_constraint="もの"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Thing" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+</CONCEPT>
+<ISA id="1187617980000_isa361" parent="接続関係" child="連動関係" />
+<ISA id="1187617980000_isa362" parent="構造的関係" child="前後関係" />
+<ISA id="1187617980000_isa363" parent="構造的関係" child="接続関係" />
+<ISA id="1187617980000_isa364" parent="時間的関係" child="時間的非重複前後関係" />
+</R_CONCEPTS>
+<PRINTER>
+<PAGE_SETTINGS header="true" footer="false" cropmarks="false" scale="52" />
+<PAGE_FORMAT w="1190.551181102362" h="841.8897637795276" iw="1133.8582677165355" ih="785.1968503937007" ix="28.346456692913307" iy="28.346456692913385" />
+<PRINTER_SETTINGS orientation="1" printername="Adobe PDF" />
+</PRINTER>
+</OE_FILE>
